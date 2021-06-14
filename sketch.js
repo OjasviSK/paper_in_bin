@@ -42,7 +42,7 @@ function draw(){
 	drawSprites();
 }
 
-/*function keyPressed(){
+  function keyPressed(){
 	if(keyCode === UP_ARROW){
 		Matter.Body.applyForce(paper.body, paper.body.position, {x:0, y:-50});
 	}
@@ -53,11 +53,4 @@ function draw(){
 		Matter.Body.applyForce(paper.body, paper.body.position, {x:-50, y:0});
 	}
 }
-*/
-function mouseDragged(){
-	Matter.Body.setPosition(paper.body,{x:mouseX,y:mouseY});
-}
 
-function mouseReleased(){
-	thread.fly();
-}
