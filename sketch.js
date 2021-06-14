@@ -24,8 +24,6 @@ function setup(){
 	box1=new Box(730,320,5,100);
 	box2=new Box(650,320,5,100);
 	paper=new Ball(100, 300, 50, 50);
-
-	thread = new Rope(paper.body, {x:200,y:200});
  
 }
 
@@ -38,7 +36,6 @@ function draw(){
 	box1.display();
 	box2.display();
 	dustbin.display();
-	thread.display();
 	drawSprites();
 }
 
