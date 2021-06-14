@@ -50,4 +50,3 @@ function draw(){
 		Matter.Body.applyForce(paper.body, paper.body.position, {x:-50, y:0});
 	}
 }
-
