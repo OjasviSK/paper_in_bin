@@ -2,12 +2,9 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-const Constraint = Matter.Constraint;
-var paper, box1, box2, ground, dustbin, dustbinimage;
-var thread;
+var paper, box1, box2, ground;
 
 function preload(){
-	dustbinimage=loadImage("dustbingreen.png");
 }
 
 function setup(){
@@ -17,9 +14,6 @@ function setup(){
 	world = engine.world;
 
 	//Create the Bodies Here.
-	dustbin=createSprite(690,320,100,100);
-	dustbin.addImage(dustbinimage);
-	dustbin.scale=0.35;
 	ground=new Box(400,380,900,20);
 	box1=new Box(730,320,5,100);
 	box2=new Box(650,320,5,100);
@@ -35,7 +29,6 @@ function draw(){
 	paper.display();
 	box1.display();
 	box2.display();
-	dustbin.display();
 	drawSprites();
 }
 
